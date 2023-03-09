@@ -1,0 +1,22 @@
+body {
+  background-image: url(../imgs/background-main.svg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 75px 400px 75px;
+  grid-template-areas: "header header header" ". main ." "footer footer footer";
+}
+
+body header {
+  grid-area: header;
+  backdrop-filter: blur(50px);
+  border: 1px solid #006600;
+}
+
+body main {
+  grid-area: main;
+}
+
+body footer {
+  grid-area: footer;
+}
