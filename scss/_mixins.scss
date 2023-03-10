@@ -1,4 +1,10 @@
 @mixin background-main{
     background-image: url(../imgs/background-main.svg);
     background-size: cover;
+    padding: $gutter;
+}
+
+@mixin font-default{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
 }

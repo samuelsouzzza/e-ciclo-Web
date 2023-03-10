@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg3960"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="desenho2-sam5.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3962"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.51843089"
+     inkscape:cx="226.64545"
+     inkscape:cy="540.09127"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g5798" />
+  <defs
+     id="defs3957" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       inkscape:label="Camada 1"
+       id="layer1-4"
+       transform="translate(-151.05153,-80.067575)">
+      <g
+         id="g5798"
+         transform="translate(153.61659,-37.25585)">
+        <rect
+           style="fill:#eaf3e2;fill-opacity:0;stroke:none;stroke-width:0.908391;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+           id="rect18641"
+           width="203.07022"
+           height="149.42784"
+           x="0.44924349"
+           y="150.42314" />
+        <g
+           aria-label="ECICLO"
+           id="text12343-6-0-0"
+           style="font-size:33.7379px;line-height:1.25;fill:#20732d;fill-opacity:1;stroke-width:0.843448"
+           transform="translate(4.0828323,-12.248499)">
+          <path
+             d="m 74.744342,259.14436 v 1.9568 h -5.195636 v 4.08229 h 3.2051 v 1.82185 h -3.2051 v 13.76506 h 5.195636 v 1.99053 h -7.253648 v -23.61653 z"
+             style="font-family:'Donau Uppercase';-inkscape-font-specification:'Donau Uppercase';fill:#20732d;fill-opacity:1"
+             id="path47340" />
+          <path
+             d="m 87.73346,279.92691 q -0.742233,1.51821 -1.990536,2.36165 -1.214564,0.80971 -2.766507,0.80971 -3.137625,0 -4.689569,-3.00267 -1.551943,-3.00267 -1.551943,-9.24418 0,-6.07283 1.653157,-9.10924 1.653157,-3.07015 4.925734,-3.07015 1.214564,0 2.462866,0.84345 1.248303,0.84345 1.956798,2.36165 l -1.551943,1.07962 q -1.28204,-2.32792 -3.2051,-2.32792 -4.116024,0 -4.116024,9.71652 0,4.58835 0.877185,7.69224 0.910923,3.07015 3.407528,3.07015 1.045875,0 1.686895,-0.50607 0.64102,-0.53981 1.214564,-1.61942 z"
+             style="font-family:'Donau Uppercase';-inkscape-font-specification:'Donau Uppercase';fill:#20732d;fill-opacity:1"
+             id="path47342" />
+          <path
+             d="m 92.996592,259.14436 v 23.61653 H 90.93858 v -23.61653 z"
+             style="font-family:'Donau Uppercase';-inkscape-font-specification:'Donau Uppercase';fill:#20732d;fill-opacity:1"
+             id="path47344" />
+          <path
+             d="m 107.63883,279.92691 q -0.74224,1.51821 -1.99054,2.36165 -1.21456,0.80971 -2.76651,0.80971 -3.137622,0 -4.689566,-3.00267 -1.551943,-3.00267 -1.551943,-9.24418 0,-6.07283 1.653157,-9.10924 1.653157,-3.07015 4.925732,-3.07015 1.21457,0 2.46287,0.84345 1.2483,0.84345 1.9568,2.36165 l -1.55195,1.07962 q -1.28204,-2.32792 -3.2051,-2.32792 -4.116021,0 -4.116021,9.71652 0,4.58835 0.877185,7.69224 0.910926,3.07015 3.407526,3.07015 1.04588,0 1.6869,-0.50607 0.64102,-0.53981 1.21456,-1.61942 z"
+             style="font-family:'Donau Uppercase';-inkscape-font-specification:'Donau Uppercase';fill:#20732d;fill-opacity:1"
+             id="path47346" />
+          <path
+             d="m 118.56992,280.77036 v 1.99053 h -7.82719 v -23.61653 h 2.05801 v 21.626 z"
+             style="font-family:'Donau Uppercase';-inkscape-font-specification:'Donau Uppercase';fill:#20732d;fill-opacity:1"
+             id="path47348" />
+          <path
+             d="m 126.05975,283.09827 q -3.10389,0 -4.65583,-2.96893 -1.55195,-2.96894 -1.55195,-9.24419 0,-6.27525 1.55195,-9.24418 1.55194,-2.96894 4.65583,-2.96894 3.13762,0 4.65583,2.96894 1.55194,2.96893 1.55194,9.24418 0,6.27525 -1.55194,9.24419 -1.51821,2.96893 -4.65583,2.96893 z m 0,-1.95679 q 2.39539,0 3.23883,-3.03642 0.87719,-3.03641 0.87719,-7.21991 0,-4.1835 -0.87719,-7.21991 -0.84344,-3.03641 -3.23883,-3.03641 -2.39539,0 -3.27258,3.03641 -0.84345,3.03641 -0.84345,7.21991 0,4.1835 0.84345,7.21991 0.87719,3.03642 3.27258,3.03642 z"
+             style="font-family:'Donau Uppercase';-inkscape-font-specification:'Donau Uppercase';fill:#20732d;fill-opacity:1"
+             id="path47350" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
