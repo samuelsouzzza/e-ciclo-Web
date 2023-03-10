@@ -15,8 +15,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 3fr 1fr;
   grid-template-columns: 1fr 3fr 1fr;
-  -ms-grid-rows: 75px 300px auto 75px;
-  grid-template-rows: 75px 300px auto 75px;
+  -ms-grid-rows: 75px 500px auto 75px;
+  grid-template-rows: 75px 500px auto 75px;
       grid-template-areas: "header header header" "banner banner banner" ". main ." "footer footer footer";
 }
 body header {
@@ -102,6 +102,26 @@ body .banner-inicio img {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+body .btn-banner {
+  background-color: #0E2A47;
+  position: absolute;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+  top: 78%;
+  left: 35%;
+  width: 30%;
+  height: 50px;
+  font-size: 28px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 5px 1px #004d00;
+          box-shadow: 1px 1px 5px 1px #004d00;
+}
+body .btn-banner:hover {
+  background-color: #00FF00;
+  color: #f8f8f8;
 }
 body main {
   -ms-grid-row: 3;

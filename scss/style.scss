@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    @include font-default;
+    font-family: $font-main;
+    font-size: $font-2;
 }
 body{
     @include background-main;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 75px 300px auto 75px;
+    grid-template-rows: 75px 500px auto 75px;
     grid-template-areas: 
     "header header header"
     "banner banner banner"
@@ -66,8 +67,7 @@ body{
                 }
                 .menu-mobile{
                     display: flex;
-                }
-                
+                }   
         }
         }
         .banner-inicio{
@@ -76,6 +76,24 @@ body{
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
+            }
+        }
+        .btn-banner{
+            background-color: $secondary-color;
+            position: absolute;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            top: 78%;
+            left: 35%;
+            width: 30%;
+            height: 50px;
+            font-size: $font-4;
+            transition: .5s;
+            cursor: pointer;
+            box-shadow: 1px 1px 5px 1px $neutral-color;
+            &:hover{
+                background-color: $primary-color;
+                color: $white;
             }
         }
         main{
@@ -94,3 +112,4 @@ body{
     "footer";
     }
 }
+
