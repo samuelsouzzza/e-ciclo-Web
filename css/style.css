@@ -123,6 +123,13 @@ body .btn-banner:hover {
   background-color: #00FF00;
   color: #f8f8f8;
 }
+@media only screen and (max-width: 600px) {
+  body .btn-banner {
+    top: 87%;
+    left: 15%;
+    width: 70%;
+  }
+}
 body main {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
@@ -138,8 +145,8 @@ body footer {
   body {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 75px 200px auto 75px;
-    grid-template-rows: 75px 200px auto 75px;
+    -ms-grid-rows: 75px 500px auto 75px;
+    grid-template-rows: 75px 500px auto 75px;
         grid-template-areas: "header" "banner" "main" "footer";
   }
   body header {
