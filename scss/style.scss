@@ -137,6 +137,7 @@ body{
                         }
                         &:hover{
                             border: 1px solid $primary-color;
+                            transform: scale(1.015);
                         }
                     }
                 }
@@ -144,6 +145,10 @@ body{
         }
         footer{
             grid-area: footer;
+            text-align: center;
+            padding: $gutter;
+            backdrop-filter: blur(10px);
+            border: 1px solid $neutral-color;
         }
     @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;

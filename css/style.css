@@ -189,12 +189,19 @@ body main section .cards div img {
 }
 body main section .cards div:hover {
   border: 1px solid #00FF00;
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
 }
 body footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
+  text-align: center;
+  padding: 1%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid #004d00;
 }
 @media only screen and (max-width: 600px) {
   body {
