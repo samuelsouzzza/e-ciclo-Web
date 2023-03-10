@@ -10,10 +10,10 @@ body{
     @include background-main;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 75px auto 75px;
+    grid-template-rows: 75px 300px auto 75px;
     grid-template-areas: 
     "header header header"
-    "carrosel carrosel carrosel"
+    "banner banner banner"
     ". main ."
     "footer footer footer";
         header{
@@ -55,6 +55,9 @@ body{
             @media only screen and (max-width: 600px) {
                 justify-content: space-between;
                 padding: $gutter+3;
+                img{
+                    max-height: 100%;
+                }
                 div{
                     width: auto;
                     ul{
@@ -67,6 +70,14 @@ body{
                 
         }
         }
+        .banner-inicio{
+            grid-area: banner;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
         main{
             grid-area: main;
         }
@@ -75,9 +86,10 @@ body{
         }
     @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
+    grid-template-rows: 75px 200px auto 75px;
     grid-template-areas:
     "header"
-    "carrosel"
+    "banner"
     "main"
     "footer";
     }

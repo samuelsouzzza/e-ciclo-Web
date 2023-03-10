@@ -15,9 +15,9 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 3fr 1fr;
   grid-template-columns: 1fr 3fr 1fr;
-  -ms-grid-rows: 75px auto 75px;
-  grid-template-rows: 75px auto 75px;
-      grid-template-areas: "header header header" "carrosel carrosel carrosel" ". main ." "footer footer footer";
+  -ms-grid-rows: 75px 300px auto 75px;
+  grid-template-rows: 75px 300px auto 75px;
+      grid-template-areas: "header header header" "banner banner banner" ". main ." "footer footer footer";
 }
 body header {
   -ms-grid-row: 1;
@@ -76,6 +76,9 @@ body header div ul li a:hover {
             justify-content: space-between;
     padding: 4%;
   }
+  body header img {
+    max-height: 100%;
+  }
   body header div {
     width: auto;
   }
@@ -87,6 +90,18 @@ body header div ul li a:hover {
     display: -ms-flexbox;
     display: flex;
   }
+}
+body .banner-inicio {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: banner;
+}
+body .banner-inicio img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 body main {
   -ms-grid-row: 3;
@@ -103,10 +118,17 @@ body footer {
   body {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-        grid-template-areas: "header" "carrosel" "main" "footer";
+    -ms-grid-rows: 75px 200px auto 75px;
+    grid-template-rows: 75px 200px auto 75px;
+        grid-template-areas: "header" "banner" "main" "footer";
   }
   body header {
     -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  body .banner-inicio {
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
