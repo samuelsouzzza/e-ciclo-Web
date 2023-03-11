@@ -84,7 +84,24 @@ body{
                 .menu-mobile{
                     display: flex;
                 }   
+            }
         }
+        .box-welcome{
+            position: absolute;
+            top: 35%;
+            left: 27%;
+            width: 45%;
+            height: auto;
+            padding:$gutter;
+            background-color: $secondary-color-blur;
+            text-align: center;
+            h1{
+                font-size: $font-6;
+            }
+            @media only screen and (max-width: $telaMobile) {
+                width: 80%;
+                left: 10%;
+            }
         }
         .banner-inicio{
             grid-area: banner;

@@ -104,6 +104,25 @@ body header div ul li a:hover {
     display: flex;
   }
 }
+body .box-welcome {
+  position: absolute;
+  top: 35%;
+  left: 27%;
+  width: 45%;
+  height: auto;
+  padding: 1%;
+  background-color: rgba(14, 41, 71, 0.768627451);
+  text-align: center;
+}
+body .box-welcome h1 {
+  font-size: 40px;
+}
+@media only screen and (max-width: 600px) {
+  body .box-welcome {
+    width: 80%;
+    left: 10%;
+  }
+}
 body .banner-inicio {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
