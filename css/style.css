@@ -219,8 +219,16 @@ body main section .cards div:hover {
 }
 body main .section-o-que-fazemos {
   padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 body main .section-o-que-fazemos .box {
+  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,6 +236,7 @@ body main .section-o-que-fazemos .box {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1%;
+  padding: 1%;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -238,11 +247,12 @@ body main .section-o-que-fazemos .box img {
   height: 500px;
 }
 body main .section-o-que-fazemos .box button {
-  margin: 1%;
+  margin: 4% 0;
   background-color: #0E2A47;
   border: 1px solid #00FF00;
   color: #00FF00;
-  width: 30%;
+  width: 100%;
+  height: 35px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
@@ -250,6 +260,30 @@ body main .section-o-que-fazemos .box button {
 body main .section-o-que-fazemos .box button:hover {
   background-color: #00FF00;
   color: #f8f8f8;
+}
+@media only screen and (max-width: 600px) {
+  body main .section-o-que-fazemos .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 16% 0;
+  }
+  body main .section-o-que-fazemos .box img {
+    width: 100%;
+    height: 300px;
+  }
+  body main .section-o-que-fazemos .box .paragraphs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 6% 0;
+  }
 }
 body footer {
   -ms-grid-row: 3;
