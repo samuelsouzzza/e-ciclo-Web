@@ -1,3 +1,15 @@
+html {
+  overflow-y: scroll;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0E2A47;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #00FF00;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,18 +28,21 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 3fr 1fr;
   grid-template-columns: 1fr 3fr 1fr;
-  -ms-grid-rows: 75px 600px auto 75px;
-  grid-template-rows: 75px 600px auto 75px;
-      grid-template-areas: "header header header" "banner banner banner" ". main ." "footer footer footer";
+  -ms-grid-rows: 600px auto 75px;
+  grid-template-rows: 600px auto 75px;
+      grid-template-areas: "banner banner banner" ". main ." "footer footer footer";
 }
 body header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: header;
+  background-color: rgba(14, 41, 71, 0.768627451);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 75px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  border: 1px solid #004d00;
+  border-bottom: 1px solid #00FF00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +108,7 @@ body header div ul li a:hover {
   }
 }
 body .banner-inicio {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: banner;
@@ -135,7 +150,7 @@ body .btn-banner:hover {
   }
 }
 body main {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: main;
 }
@@ -206,7 +221,7 @@ body main section .cards div:hover {
   }
 }
 body footer {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
@@ -223,11 +238,6 @@ body footer {
     -ms-grid-rows: 75px 600px auto 75px;
     grid-template-rows: 75px 600px auto 75px;
         grid-template-areas: "header" "banner" "main" "footer";
-  }
-  body header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
   }
   body .banner-inicio {
     -ms-grid-row: 2;
