@@ -54,7 +54,7 @@ body{
                 }
             
             }
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: $telaMobile) {
                 justify-content: space-between;
                 padding: $gutter+3;
                 img{
@@ -98,7 +98,7 @@ body{
                 color: $white;
                 font-weight: bold;
             }
-            @media only screen and (max-width: 600px){
+            @media only screen and (max-width: $telaMobile){
                 top: 87%;
                 left: 15%;
                 width: 70%;
@@ -140,6 +140,12 @@ body{
                             transform: scale(1.015);
                         }
                     }
+                    @media only screen and (max-width: $telaMobile){
+                        flex-direction: column;
+                    }
+                } 
+                @media only screen and (max-width: $telaMobile){
+                    margin: $gutter+15 0;
                 }
             }
         }
@@ -150,9 +156,9 @@ body{
             backdrop-filter: blur(10px);
             border: 1px solid $neutral-color;
         }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: $telaMobile){
     grid-template-columns: 1fr;
-    grid-template-rows: 75px 500px auto 75px;
+    grid-template-rows: 75px 600px auto 75px;
     grid-template-areas:
     "header"
     "banner"

@@ -192,6 +192,19 @@ body main section .cards div:hover {
   -webkit-transform: scale(1.015);
           transform: scale(1.015);
 }
+@media only screen and (max-width: 600px) {
+  body main section .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body main section {
+    margin: 16% 0;
+  }
+}
 body footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -207,8 +220,8 @@ body footer {
   body {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 75px 500px auto 75px;
-    grid-template-rows: 75px 500px auto 75px;
+    -ms-grid-rows: 75px 600px auto 75px;
+    grid-template-rows: 75px 600px auto 75px;
         grid-template-areas: "header" "banner" "main" "footer";
   }
   body header {
