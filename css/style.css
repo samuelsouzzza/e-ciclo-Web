@@ -1,6 +1,3 @@
-html {
-  overflow-y: scroll;
-}
 html::-webkit-scrollbar {
   width: 10px;
   background-color: #0E2A47;
@@ -26,8 +23,8 @@ body {
   padding: 1%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr 1fr;
-  grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   -ms-grid-rows: 600px auto 75px;
   grid-template-rows: 600px auto 75px;
       grid-template-areas: "banner banner banner" ". main ." "footer footer footer";
@@ -219,6 +216,40 @@ body main section .cards div:hover {
   body main section {
     margin: 16% 0;
   }
+}
+body main .section-o-que-fazemos {
+  padding: 1%;
+}
+body main .section-o-que-fazemos .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body main .section-o-que-fazemos .box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40%;
+  height: 500px;
+}
+body main .section-o-que-fazemos .box button {
+  margin: 1%;
+  background-color: #0E2A47;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+  width: 30%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+body main .section-o-que-fazemos .box button:hover {
+  background-color: #00FF00;
+  color: #f8f8f8;
 }
 body footer {
   -ms-grid-row: 3;
