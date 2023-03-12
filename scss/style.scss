@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "animations.scss";
 html{
+    scroll-behavior: smooth;
     &::-webkit-scrollbar{
         width: 10px;
         background-color: $secondary-color;
@@ -21,7 +22,6 @@ html{
 }
 body{
     @include background-main;
-    scroll-behavior: smooth;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows:  600px auto 75px;
@@ -30,8 +30,8 @@ body{
     ". main ."
     "footer footer footer";
         header{
-            background-color: $secondary-color-blur;
-            backdrop-filter: blur(10px);
+            background-color: $secondary-color;
+          
             position: fixed;
             top: 0;
             left: 0;
@@ -91,8 +91,7 @@ body{
                 display:none;
                 @media only screen and (max-width: $telaMobile){
                     &.ativo{
-                        background-color: $secondary-color-blur;
-                        backdrop-filter: blur(10px);
+                        background-color: $secondary-color;
                         border-bottom: 1px solid $primary-color;
                         display: flex;
                         position: absolute;
@@ -112,7 +111,6 @@ body{
                             margin: $gutter+2;
                         }
                     }
-                    
                 }
             }
         }
@@ -214,7 +212,6 @@ body{
                         height: auto;
                         margin: $gutter;
                         padding: $gutter;
-                        backdrop-filter: blur(10px);
                         border: 1px solid $neutral-color;
                         transition: .5s;
                         display: flex;
@@ -228,9 +225,13 @@ body{
                             border: 1px solid $primary-color;
                             transform: scale(1.015);
                         }
+                        @media only screen and (max-width: $telaMobile){
+                            border: 0;
+                        }
                     }
                     @media only screen and (max-width: $telaMobile){
                         flex-direction: column;
+                        
                     }
                 } 
                 @media only screen and (max-width: $telaMobile){
@@ -247,7 +248,6 @@ body{
                     justify-content: space-between;
                     gap: $gutter;
                     padding: $gutter;
-                    backdrop-filter: blur(10px);
                     img{
                         object-fit: cover;
                         width: 40%;
@@ -288,7 +288,6 @@ body{
             grid-area: footer;
             text-align: center;
             padding: $gutter;
-            backdrop-filter: blur(10px);
             border: 1px solid $neutral-color;
         }
     @media only screen and (max-width: $telaMobile){

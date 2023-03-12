@@ -21,6 +21,9 @@
             transform: translate3d(0, 0, 0);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 html::-webkit-scrollbar {
   width: 10px;
   background-color: #0E2A47;
@@ -44,7 +47,6 @@ body {
   background-image: url(../imgs/background-main.svg);
   background-size: cover;
   padding: 1%;
-  scroll-behavior: smooth;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 5fr 1fr;
@@ -54,9 +56,7 @@ body {
       grid-template-areas: "banner banner banner" ". main ." "footer footer footer";
 }
 body header {
-  background-color: rgba(14, 41, 71, 0.768627451);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  background-color: #0E2A47;
   position: fixed;
   top: 0;
   left: 0;
@@ -133,9 +133,7 @@ body header .menu-mobile-options {
 }
 @media only screen and (max-width: 600px) {
   body header .menu-mobile-options.ativo {
-    background-color: rgba(14, 41, 71, 0.768627451);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    background-color: #0E2A47;
     border-bottom: 1px solid #00FF00;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -171,7 +169,7 @@ body .box-welcome {
   width: 100%;
   height: auto;
   padding: 1%;
-  background-color: rgba(14, 41, 71, 0.768627451);
+  background-color: rgba(14, 41, 71, 0.9333333333);
   text-align: center;
 }
 body .box-welcome img {
@@ -294,8 +292,6 @@ body main section .cards div {
   height: auto;
   margin: 1%;
   padding: 1%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   border: 1px solid #004d00;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -318,6 +314,11 @@ body main section .cards div:hover {
   border: 1px solid #00FF00;
   -webkit-transform: scale(1.015);
           transform: scale(1.015);
+}
+@media only screen and (max-width: 600px) {
+  body main section .cards div {
+    border: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   body main section .cards {
@@ -352,8 +353,6 @@ body main .section-o-que-fazemos .box {
           justify-content: space-between;
   gap: 1%;
   padding: 1%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
 }
 body main .section-o-que-fazemos .box img {
   -o-object-fit: cover;
@@ -407,8 +406,6 @@ body footer {
   grid-area: footer;
   text-align: center;
   padding: 1%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   border: 1px solid #004d00;
 }
 @media only screen and (max-width: 600px) {
