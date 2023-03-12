@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
     <title>CSE</title>
 </head>
 <body>
@@ -23,8 +20,18 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </div>
-        <div class="menu-mobile">
+        <div data-js-iconeMobile class="menu-mobile">
             <i class="fa-solid fa-bars"></i>
+        </div>
+        <div data-js-menuMobile class="menu-mobile-options">
+            <ul>
+                <li><a href="#nossaProposta">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
         </div>
     </header>
     <div data-js-btnSubirAoTopo class="btn-subir-ao-topo">
@@ -43,7 +50,7 @@
     <button class="btn-banner">Conhecer</button>
     <main>
         <section>
-            <h1 class="titles">Nossa proposta</h1>
+            <h1 class="titles" id="nossaProposta">Nossa proposta</h1>
             <article class="content">
                 A equipe CSE se dedica à coleta seletiva de eletrônicos
                  para minimizar impactos ambientais negativos. Conscientizamos a 

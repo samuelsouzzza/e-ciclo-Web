@@ -1,16 +1,24 @@
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
   }
   to {
     opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }@keyframes fadeIn {
   from {
     opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
   }
   to {
     opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 html::-webkit-scrollbar {
@@ -47,14 +55,14 @@ body {
 }
 body header {
   background-color: rgba(14, 41, 71, 0.768627451);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
   width: 100%;
   height: 80px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   border-bottom: 1px solid #00FF00;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,10 +110,11 @@ body header div ul li a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: 100px;
     padding: 4%;
   }
   body header img {
-    max-height: 100%;
+    max-height: 80%;
   }
   body header div {
     width: auto;
@@ -117,6 +126,42 @@ body header div ul li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+body header .menu-mobile-options {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  body header .menu-mobile-options.ativo {
+    background-color: rgba(14, 41, 71, 0.768627451);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-bottom: 1px solid #00FF00;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    bottom: -97%;
+    left: 0;
+    width: 100%;
+    -webkit-animation: fadeIn 0.1s;
+            animation: fadeIn 0.1s;
+  }
+  body header .menu-mobile-options ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+    width: 100%;
+  }
+  body header .menu-mobile-options ul li {
+    margin: 3%;
   }
 }
 body .box-welcome {

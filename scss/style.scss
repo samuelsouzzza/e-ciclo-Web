@@ -31,13 +31,13 @@ body{
     "footer footer footer";
         header{
             background-color: $secondary-color-blur;
+            backdrop-filter: blur(10px);
             position: fixed;
             top: 0;
             left: 0;
             z-index: 2;
             width: 100%;
             height: 80px;
-            backdrop-filter: blur(10px);
             border-bottom: 1px solid $primary-color;
             display: flex;
             justify-content: space-between;
@@ -55,7 +55,6 @@ body{
                 width: 80%;
                 ul{
                     display: flex;
-                    // flex-wrap: wrap;
                     li{
                         list-style: none;
                         margin: 0 5%;
@@ -70,13 +69,13 @@ body{
                         }
                     }
                 }
-            
             }
             @media only screen and (max-width: $telaMobile) {
                 justify-content: space-between;
+                height: 100px;
                 padding: $gutter+3;
                 img{
-                    max-height: 100%;
+                    max-height: 80%;
                 }
                 div{
                     width: auto;
@@ -87,6 +86,34 @@ body{
                 .menu-mobile{
                     display: flex;
                 }   
+            }
+            .menu-mobile-options{
+                display:none;
+                @media only screen and (max-width: $telaMobile){
+                    &.ativo{
+                        background-color: $secondary-color-blur;
+                        backdrop-filter: blur(10px);
+                        border-bottom: 1px solid $primary-color;
+                        display: flex;
+                        position: absolute;
+                        z-index: 2;
+                        bottom: -97%;
+                        left: 0;
+                        width: 100%;
+                        animation: fadeIn .1s;
+                    }
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        flex-shrink: 2;
+                        width: 100%;
+                        li{
+                            margin: $gutter+2;
+                        }
+                    }
+                    
+                }
             }
         }
         .box-welcome{
