@@ -1,0 +1,12 @@
+@mixin background-main{
+    background-image: url(../imgs/background-main.svg);
+    background-size: cover;
+    padding: $gutter;
+}
+@mixin font-title{
+    font-size: 45px;
+    font-weight: bold;
+}
+@mixin secondary-blur{
+    
+}
